@@ -1,0 +1,168 @@
+/* === Base === */
+:root {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+  --accent: #7f5af0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
+/* === Navbar === */
+header {
+  padding: 1.5rem 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  opacity: .8;
+  transition: .2s;
+}
+
+.links a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+
+/* === Hero === */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  opacity: .8;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: var(--accent);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* === Skills === */
+.skills h3,
+.projects h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.skills-grid span {
+  background: #1a1a1a;
+  padding: .8rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* === Projects === */
+.projects-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: .6;
+}
+
+/* === Animação === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: .6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Responsivo === */
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-img {
+    order: -1;
+  }
+}
