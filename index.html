@@ -3,80 +3,326 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arthur Dahmer • Portfólio</title>
+  <title>Arthur Dahmer • Desenvolvedor Front-end</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Portfólio de Arthur Dahmer, desenvolvedor front-end minimalista e moderno">
+  <meta name="description" content="Portfólio de Arthur Dahmer, desenvolvedor front-end especializado em criar experiências web modernas e impactantes">
   <link rel="icon" href="assets/favicon.svg">
 </head>
 
 <body>
-  <header>
+  <!-- Particles Background -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Header -->
+  <header class="header">
     <nav class="container navbar">
-      <h1 class="logo">Arthur Dahmer</h1>
-      <div class="links navbar-nav">
+      <div class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Arthur Dahmer</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
         <a href="#projects" class="nav-link">Projetos</a>
         <a href="#skills" class="nav-link">Skills</a>
-        <a href="https://github.com/arthurd-d" target="_blank" class="nav-link">GitHub</a>
+        <a href="https://github.com/arthurd-d" target="_blank" class="nav-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero container fade-in">
-      <div class="hero-text">
-        <h2>Desenvolvedor Front-end</h2>
-        <p>Desenvolvo sites profissionais que destacam sua marca e transformam visitantes em clientes.</p>
-        <a href="#projects" class="btn">Ver Projetos</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            Disponível para projetos
+          </div>
+          <h1 class="hero-title">
+            Transformo ideias em
+            <span class="gradient-text">experiências digitais</span>
+          </h1>
+          <p class="hero-description">
+            Desenvolvedor Front-end especializado em criar sites modernos, responsivos e de alta performance que conectam marcas com seus clientes.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              Ver Projetos
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#skills" class="btn btn-secondary">Minhas Skills</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card card-1">
+            <div class="card-icon">💻</div>
+            <div class="card-text">Clean Code</div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-icon">🎨</div>
+            <div class="card-text">UI/UX Design</div>
+          </div>
+          <div class="floating-card card-3">
+            <div class="card-icon">⚡</div>
+            <div class="card-text">Performance</div>
+          </div>
+          <div class="code-window">
+            <div class="window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-body">
+              <code class="typing-text"></code>
+            </div>
+          </div>
+        </div>
       </div>
-   <section id="projects" class="projects container fade-in">
-      <h3>Projetos</h3>
-      <div class="projects-grid">
-        <div class="card">
-          <h4>FitSou - site</h4>
-          <p>Um site moderno e responsivo para a marca de refeições saudáveis congeladas FitSou</p>
-          <a href="https://fitsou.netlify.app" target="_blank">Ver mais →</a>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-subtitle">Alguns dos meus trabalhos mais recentes</p>
         </div>
 
-        <div class="card">
-          <h4>Cadê o açúcar? - site</h4>
-          <p>Site para a loja Cadê o açúcar?, desenvolvido com Bootstrap.</p>
-          <a href="https://cadeoacucar.netlify.app" target="_blank">Ver mais →</a>
-        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-tilt>
+            <div class="project-image"><img src="" alt="">
+              <div class="project-overlay">
+                <a href="https://fitsou.netlify.app" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="project-gradient"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">FitSou</h3>
+              <p class="project-description">
+                Site moderno e responsivo para marca de refeições saudáveis congeladas, com foco em conversão e experiência do usuário.
+              </p>
+              <a href="https://fitsou.netlify.app" target="_blank" class="project-btn">
+                Ver projeto completo
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
 
-        <div class="card">
-          <h4>Fomeria - LinkTree</h4>
-          <p>Um linktree sob medida para a loja Fomeria</p>
-          <a href="https://fomeria.netlify.app" target="_blank">Ver mais →</a>
-        </div>
+          <div class="project-card" data-tilt>
+            <div class="project-image"> <img src="assets/cade.png" alt="">
+              <div class="project-overlay">
+                <a href="https://cadeoacucar.netlify.app" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="project-gradient"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Bootstrap</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <h3 class="project-title">Cadê o açúcar?</h3>
+              <p class="project-description">
+                Site desenvolvido com Bootstrap, oferecendo uma experiência intuitiva e responsiva.
+              </p>
+              <a href="https://cadeoacucar.netlify.app" target="_blank" class="project-btn">
+                Ver projeto completo
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
 
+          <div class="project-card" data-tilt>
+            <div class="project-image">
+              <div class="project-overlay">
+                <a href="https://fomeria.netlify.app" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="project-gradient"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">LinkTree</span>
+              </div>
+              <h3 class="project-title">Fomeria</h3>
+              <p class="project-description">
+                LinkTree personalizado e moderno para centralizar todos os canais de comunicação da loja.
+              </p>
+              <a href="https://fomeria.netlify.app" target="_blank" class="project-btn">
+                Ver projeto completo
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
 
-        <div class="card">
-          <h4>YumiHair</h4>
-          <p>Site responsivo e moderno para um salão de beleza</p>
-          <a href="https://yumihair.netlify.app" target="_blank">Ver mais →</a>
+          <div class="project-card" data-tilt>
+            <div class="project-image">
+              <div class="project-overlay">
+                <a href="https://yumihair.netlify.app" target="_blank" class="project-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="project-gradient"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">YumiHair</h3>
+              <p class="project-description">
+                Website elegante e responsivo para salão de beleza, destacando serviços e facilitando agendamentos.
+              </p>
+              <a href="https://yumihair.netlify.app" target="_blank" class="project-btn">
+                Ver projeto completo
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-      <div class="hero-img">
-        <!-- Futuro: imagem se quiser -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Tecnologias & Skills</h2>
+          <p class="section-subtitle">Ferramentas que domino para criar soluções web</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h4>HTML</h4>
+            <p>Estruturação semântica e acessível</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <path d="M15 2v2M15 20v2M2 15h2M20 15h2M2 9h2M20 9h2M9 2v2M9 20v2"/>
+              </svg>
+            </div>
+            <h4>CSS</h4>
+            <p>Design responsivo e animações</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h4>JavaScript</h4>
+            <p>Interatividade e funcionalidade</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+            </div>
+            <h4>Bootstrap</h4>
+            <p>Desenvolvimento ágil e responsivo</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section id="skills" class="skills container fade-in">
-      <h3>Skills</h3>
-      <div class="skills-grid">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-      </div>
-    </section>
-
- 
   </main>
 
-  <footer>
-    <p>© 2025 Arthur Dahmer</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>Arthur Dahmer.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/arthurd-d" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
