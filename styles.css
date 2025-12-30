@@ -890,4 +890,12 @@ body {
   .skill-card {
     padding: 1.5rem;
   }
+  .project-image{
+    display: none;
+  }
+}
+@media(max-width: 1050px){
+  .project-image{
+    display: none;
+  }
 }
